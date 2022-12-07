@@ -1,0 +1,72 @@
+.container {
+    transform: translateX(30%);
+    height: 600px;
+    width: 600px;
+    background: blue;
+}
+
+.parent {
+    height: 300px;
+    width: 300px;
+    background: black;
+    position: relative;
+    top: 200px;
+    left: 160px;
+    border-radius: 20%;
+    animation: box 3s infinite;
+}
+
+h2 {
+    position: relative;
+    color: white;
+    top: 150px;
+    left: 60px;
+}
+
+.ball {
+    position: relative;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    bottom: 170px;
+    right: 30px;
+    border-radius: 30px;
+    animation: ball 5s infinite;
+}
+
+@keyframes ball {
+    0% {
+        background-color: red;
+        bottom: 170px;
+        right: 30px;
+    }
+    25% {
+        background-color: yellow;
+        bottom: 220px;
+        right: -330px;
+    }
+    50% {
+        background-color: rgb(19, 225, 187);
+        bottom: -270px;
+        right: -330px;
+    }
+    75% {
+        background-color: rgb(240, 17, 17);
+        bottom: -270px;
+        right: 90px;
+    }
+    100% {
+        background-color: green;
+        bottom: 220px;
+        right: 90px;
+    }
+}
+
+@keyframes box {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
